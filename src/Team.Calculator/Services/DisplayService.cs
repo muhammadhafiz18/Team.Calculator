@@ -1,3 +1,9 @@
+using Team.Calculator.Models;
+using Team.Calculator.Interfaces;
+
+
+namespace Team.Calculator.Services;
+
 public class DisplayService : IDisplayService
 {
     public void PrintHistory(List<HistoryItem> historyItems)

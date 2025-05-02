@@ -1,5 +1,11 @@
 using System.Text.Json;
-public class HistoryService
+using Team.Calculator.Interfaces;
+using Team.Calculator.Models;
+using Team.Calculator.Services;
+
+namespace Team.Calculator.Services;
+
+public class HistoryService : IHistoryService
 {
     public void SaveHistory(string path, List<HistoryItem> history)
     {
